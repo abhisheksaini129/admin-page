@@ -1,38 +1,144 @@
+body {
+  margin: 0;
+  /* box-sizing: border-box; */
+  background-color: rgb(243, 237, 237);
+  /* padding: 0; */
+  overflow: auto;
+}
 .App {
+  width: 100%;
+  height: 100%;
+  font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bodyArea{
+  width: 72vw;
+  height: 100%;
+  margin:auto;
+}
+.bodyArea >h2{
   text-align: center;
+  margin-top: 1vmax;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputbox{
+  width: 70vw;
+  height: 4vh;
+  border-radius: 10px;
+  font-size: 1.2vmax;
+  outline: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+  width: 71vw;
+  height: 2vmax;
+  border-bottom: 2px solid gray;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin:.5vmax 0 .5vmax 0;
+}
+.userdata>*{
+width: 12.5vmax;
+height: 90%;
+overflow: hidden;
+text-align: center;
+margin: auto ;
+font-size: 1.2vmax;
+margin-bottom: .5vmax;
+}
+.menuArea{
+  font-weight: 700;
+}
+.menuArea>*{
+  width: 12.5vmax;
+  height: 90%;
+  /* border: 2px solid red; */
+  text-align: center;
+  margin: auto;
+}
+.Layer_1{
+  margin-left: 1vmax;
+  width: 1.5vmax;
+  height: 1.5vmax; 
+ 
+}
+.edit{
+  fill: royalblue;
+  cursor: pointer;
+}
+.edit:hover{
+  fill: rgb(52, 52, 230);
+  transform: scale(1.1);
+  transition: .3s;
+}
+.delete{
+  fill: rgb(202, 16, 16);
+  cursor: pointer;
+}
+.delete:hover{
+  fill:rgb(165, 10, 41);
+  transform: scale(1.1);
+  transition: .3s;
+}
+/* ----------------------edit text area ------------------ */
+.editTab{
+width: 13vmax;
+height: 1.3vmax;
+outline: none;
+border-radius: 5px;
+text-decoration: solid;
+color: royalblue;
+border: 1px solid darkolivegreen;
+}
+.save{
+  fill: rgb(9, 109, 9);
+  cursor: pointer;
+}
+.save:hover{
+ fill: rgb(12, 87, 12);
+  transition: .3s;
+}
+.cancel{
+  fill: rgb(202, 16, 16);
+  cursor: pointer;
+}
+.cancel:hover{
+  fill: rgb(160, 16, 16);
+  transform: scale(1.2);
+   transition: .3s;
+ }
+
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
+.Pagination{
+  height: 3vmax;
+  width: 50vw;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vmax;
+  margin: auto;
+}
+.Page{
+  width: 5vmax;
+  height: 2vmax;
+  /* border: 1px solid blue; */
+  background-color: white;
+  margin: auto 1vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2vmax;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.deletebutton{
+  height: 2.5vmax;
+  width: 6vmax;
+  background-color: rgb(202, 16, 16);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
