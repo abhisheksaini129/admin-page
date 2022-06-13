@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState ,useEffect} from 'react';
 
 function App() {
- 
+ const dataPerPage=10;
   useEffect(()=>{
    const fetchdata=async ()=>{
      setLoading(true);
@@ -15,7 +15,6 @@ function App() {
   },[]);
   const [data, setdata] = useState([]);
   const [currPage,setPage] = useState(1);
-  const [dataPerPage,setDataPerPage] = useState(10);
   const [loading,setLoading]=useState(false);
   const [editFlag,setEdit]=useState(false);
   const [key,setKey]=useState(0);
